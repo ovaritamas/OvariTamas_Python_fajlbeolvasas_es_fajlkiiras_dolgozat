@@ -56,3 +56,12 @@ for k in konyvek:
 
 legaktivabb_szerzo = max(szerzok, key=szerzok.get)
 legaktivabb_kiado = max(kiadok, key=kiadok.get)
+
+eredmenyek = [
+    f"1. A beolvasott fájlban összesen {osszes_konyv} könyv szerepel.",
+    f"2. A legtöbb oldalas könyv: {legnagyobb['cim']} ({legnagyobb['oldal']} oldal)",
+    f"3. A legkevesebb oldalas könyv: {legkisebb['cim']} ({legkisebb['oldal']} oldal)",
+    f"4. A legtöbb könyvet író szerző: {legaktivabb_szerzo}",
+    f"5. Az átlagos oldalszám: {atlag_oldal:.1f}",
+    f"***A legtöbb könyvet kiadó kiadó: {legaktivabb_kiado}"
+]
