@@ -19,4 +19,27 @@ print("2. A legtöbb oldalas könyv: ____")
 print("3. A legkevesebb oldalas könyv: ____")
 print("4. A legtöbb könyvet író szerző: ____")
 print("5. Az átlagos oldalszám: ____")
-print("***A legtöbb könyvet kiadó kiadó: ____")
+print("***A legtöbb könyvet kiadó kiadó: ____"),
+
+
+import os
+
+mappa = "kiirt_adatok"
+kimeneti_fajl = os.path.join(mappa, "statisztika.txt")
+
+konyvek = []
+
+with open('beolvasando_adatok/konyvek.txt',"r", encoding="utf-8") as f:
+    sorok = f.readlines()
+
+    for sor in sorok[1:]: 
+        adat = [item.strip() for item in sor.strip().split(";")]
+        
+        if len(adat) >= 4:
+            konyvek.append({
+                "szerzo": adat[0],
+                "cim": adat[1],
+                "oldal": int(adat[2]),
+                "kiado": adat[3]
+            })
+

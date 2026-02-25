@@ -1,0 +1,6 @@
+1. A beolvasott fájlban összesen 29 könyv szerepel.
+2. A legtöbb oldalas könyv: Alexandre Dumas (1248 oldal)
+3. A legkevesebb oldalas könyv: Antoine de Saint-Exupéry (96 oldal)
+4. A legtöbb könyvet író szerző: A Gyűrűk Ura
+5. Az átlagos oldalszám: 539.9
+***A legtöbb könyvet kiadó kiadó: Európa Könyvkiadó
