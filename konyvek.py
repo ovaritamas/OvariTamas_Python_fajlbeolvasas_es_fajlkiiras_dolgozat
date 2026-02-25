@@ -43,3 +43,16 @@ with open('beolvasando_adatok/konyvek.txt',"r", encoding="utf-8") as f:
                 "kiado": adat[3]
             })
 
+osszes_konyv = len(konyvek)
+legnagyobb = max(konyvek, key=lambda x: x["oldal"])
+legkisebb = min(konyvek, key=lambda x: x["oldal"])
+atlag_oldal = sum(k["oldal"] for k in konyvek) / osszes_konyv
+
+szerzok = {}
+kiadok = {}
+for k in konyvek:
+    szerzok[k["szerzo"]] = szerzok.get(k["szerzo"], 0) + 1
+    kiadok[k["kiado"]] = kiadok.get(k["kiado"], 0) + 1
+
+legaktivabb_szerzo = max(szerzok, key=szerzok.get)
+legaktivabb_kiado = max(kiadok, key=kiadok.get)
