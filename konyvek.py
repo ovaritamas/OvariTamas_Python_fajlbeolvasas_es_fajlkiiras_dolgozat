@@ -1,3 +1,4 @@
+# Leírás
 """
 Olvasd be a konyvek.txt adatait, majd oldd meg az alábbi feladatokat!
 
@@ -19,9 +20,12 @@ print("2. A legtöbb oldalas könyv: ____")
 print("3. A legkevesebb oldalas könyv: ____")
 print("4. A legtöbb könyvet író szerző: ____")
 print("5. Az átlagos oldalszám: ____")
-print("***A legtöbb könyvet kiadó kiadó: ____"),
+print("***A legtöbb könyvet kiadó kiadó: ____")
+print("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _")
+print(" ")
 
 
+# Megoldás
 import os
 
 mappa = "kiirt_adatok"
