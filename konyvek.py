@@ -65,3 +65,10 @@ eredmenyek = [
     f"5. Az átlagos oldalszám: {atlag_oldal:.1f}",
     f"***A legtöbb könyvet kiadó kiadó: {legaktivabb_kiado}"
 ]
+
+os.makedirs(mappa, exist_ok=True)
+
+with open(kimeneti_fajl, "w", encoding="utf-8") as f:
+    for sor in eredmenyek:
+        print(sor)
+        f.write(sor + "\n")
